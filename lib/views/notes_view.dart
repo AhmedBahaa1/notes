@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:notes/widgets/notes_app_body.dart';
 
 class NotesNiew extends StatelessWidget {
@@ -6,9 +7,12 @@ class NotesNiew extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: NotesAppBody(),
-
+    return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(Icons.add),
+      ),
+      body: const NotesAppBody(),
     );
   }
 }
